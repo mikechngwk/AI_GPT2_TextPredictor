@@ -74,9 +74,15 @@ GET /predict_next_sentence/?input_text=Lebron%20James%20is%20the%20greatest%20of
 ## **Sample Response:**
 ```bash
 {
-  "predicted_sentence": "Hello there, how are you doing today? I hope everything is going well!"
+  "predicted_sentence": " in basketball.\n\nThat's why he's the best. Not in the sense of stats or awards or anything. He's good in that he makes the game more fun and exciting, which in turn excites me to no end. Like all greats, he takes the love and adoration and praise and love for him to the next level"
 }
 ```
+## **Example Input/Output:**
+- **Input**:
+  - **Text**: "Lebron James is the greatest of all time"
+- **Output**:
+  - **predicted_sentence**: "in basketball.\n\nThat's why he's the best. Not in the sense of stats or awards or anything. He's good in that he makes the game more fun and exciting, which in turn excites me to no end. Like all greats, he takes the love and adoration and praise and love for him to the next level"
+
 ## **Code Overview**
 
 - **app/main.py**: This is the entry point to the FastAPI app. It initializes the API and defines the route for predicting the next sentence.
